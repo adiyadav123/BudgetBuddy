@@ -1,5 +1,5 @@
 import 'package:budgetbuddy/common/color_extension.dart';
-import 'package:budgetbuddy/views/get_started_view.dart';
+import 'package:budgetbuddy/views/login/get_started_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {

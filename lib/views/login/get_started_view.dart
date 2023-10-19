@@ -1,6 +1,8 @@
 import 'package:budgetbuddy/common/color_extension.dart';
 import 'package:budgetbuddy/common_widget/primary_button.dart';
 import 'package:budgetbuddy/common_widget/secondary_boutton.dart';
+import 'package:budgetbuddy/views/login/sign_in_view.dart';
+import 'package:budgetbuddy/views/login/social_login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -57,7 +59,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const GetStartedPage(),
+                          builder: (context) => const SocialLoginView(),
                         ),
                       );
                     },
@@ -65,7 +67,14 @@ class _GetStartedPageState extends State<GetStartedPage> {
                   const SizedBox(
                     height: 15,
                   ),
-                  SecondaryButton(title: "I have an account.", onPressed: () {})
+                  SecondaryButton(
+                      title: "I have an account.",
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SignInView()));
+                      })
                 ],
               ),
             ),

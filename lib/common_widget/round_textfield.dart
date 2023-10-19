@@ -32,7 +32,7 @@ class RoundTextField extends StatelessWidget {
             )
           ],
         ),
-        const SizedBox(
+        SizedBox(
           height: 4,
         ),
         Container(
@@ -42,15 +42,21 @@ class RoundTextField extends StatelessWidget {
               color: TColor.gray60.withOpacity(0.05),
               border: Border.all(color: TColor.gray70),
               borderRadius: BorderRadius.circular(15)),
-          child: TextField(
-            controller: controller,
-            decoration: const InputDecoration(
-              focusedBorder: InputBorder.none,
-              errorBorder: InputBorder.none,
-              enabledBorder: InputBorder.none,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: TextField(
+              controller: controller,
+              style: TextStyle(
+                color: TColor.white,
+              ),
+              decoration: InputDecoration(
+                focusedBorder: InputBorder.none,
+                errorBorder: InputBorder.none,
+                enabledBorder: InputBorder.none,
+              ),
+              keyboardType: keyboardType,
+              obscureText: obscureText,
             ),
-            keyboardType: keyboardType,
-            obscureText: obscureText,
           ),
         )
       ],

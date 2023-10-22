@@ -1,4 +1,6 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
-    "editor.fontFamily": "Fira Sans Light"
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
